@@ -1,0 +1,447 @@
+* {
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  position: relative;
+  line-height: 1.4;
+  font-weight: 400;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+ul li,
+ol li {
+  list-style: none;
+  display: block;
+  margin: 0;
+}
+
+ul, ol {
+  display: block;
+  margin: 0;
+  padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.site-wrap {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.santapolis-main-wrapper__img-bg {
+  position: relative;
+}
+.santapolis-main-wrapper__img-santa {
+  width: 22%;
+  position: absolute;
+  left: 71.8%;
+  top: 7%;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-animation: santaSpin 3s infinite alternate;
+          animation: santaSpin 3s infinite alternate;
+}
+.santapolis-main-wrapper__header-banners {
+  position: absolute;
+  top: 12.3%;
+  left: 50%;
+  width: 46%;
+  transform: translateX(-50%);
+  z-index: 7;
+}
+.santapolis-main-wrapper__banner-left {
+  position: absolute;
+  top: 21%;
+  left: 29.3%;
+  max-height: 15%;
+  height: 100%;
+  width: 12%;
+  transform: translate(50%, -24%) rotate(-6deg);
+  border-radius: 22% 13% 23% 26%;
+  overflow: hidden;
+  z-index: 3;
+}
+.santapolis-main-wrapper__banner-left img {
+  transition: transform 0.3s;
+}
+.santapolis-main-wrapper__banner-left-today {
+  position: absolute;
+  top: 0;
+  width: 22%;
+  left: 30%;
+  transform: translate(-50%, 28%);
+}
+.santapolis-main-wrapper__banner-left-today img {
+  -webkit-animation: updown 8s ease infinite;
+          animation: updown 8s ease infinite;
+}
+.santapolis-main-wrapper__banner-right {
+  position: absolute;
+  top: 21%;
+  left: 47.3%;
+  width: 12%;
+  height: 100%;
+  max-height: 15%;
+  transform: translate(50%, -26%) rotate(6deg);
+  border-radius: 22% 13% 23% 26%;
+  overflow: hidden;
+  z-index: 3;
+}
+.santapolis-main-wrapper__banner-right img {
+  transition: transform 0.3s;
+}
+.santapolis-main-wrapper__banner-left-link {
+  position: absolute;
+  left: 34%;
+  top: 15%;
+  transform: translate(8%, 15%) rotate(-6deg);
+  width: 12.3%;
+  height: 15%;
+  border-radius: 31% 21% 25% 27%;
+  z-index: 7;
+}
+.santapolis-main-wrapper__banner-right-link {
+  position: absolute;
+  left: 52%;
+  top: 15%;
+  transform: translate(12%, 15%) rotate(6deg);
+  width: 11.9%;
+  height: 14.7%;
+  border-radius: 17% 14% 21% 23%;
+  z-index: 7;
+}
+.santapolis-main-wrapper__banner-right-tomorrow {
+  position: absolute;
+  top: 0;
+  width: 22%;
+  left: 40%;
+  transform: translate(100%, 28%);
+}
+.santapolis-main-wrapper__banner-right-tomorrow img {
+  -webkit-animation: updown 6s ease infinite;
+          animation: updown 6s ease infinite;
+}
+.santapolis-main-wrapper__banner-push {
+  position: absolute;
+  left: 50%;
+  width: 9%;
+  top: 30%;
+  transform: translate(-45%, -16%);
+}
+.santapolis-main-wrapper__banner-push img {
+  -webkit-animation: santaSpin 1.5s infinite alternate;
+          animation: santaSpin 1.5s infinite alternate;
+}
+.santapolis-main-wrapper__offer {
+  position: absolute;
+  top: 61.7%;
+  right: 69.7%;
+  width: 16%;
+  z-index: 6;
+}
+.santapolis-main-wrapper__offer-top {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 23%;
+  transform: translate(-90.1%, -36%);
+}
+.santapolis-main-wrapper__offer-arrow-left {
+  position: absolute;
+  left: 20%;
+  top: 42%;
+  width: 2%;
+  transform: translateX(-34%);
+  z-index: 7;
+  cursor: pointer;
+  -webkit-animation: topBottom 0.6s alternate infinite;
+          animation: topBottom 0.6s alternate infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.santapolis-main-wrapper__offer-arrow-right {
+  position: absolute;
+  left: 32%;
+  top: 43%;
+  width: 2%;
+  transform: translate(-53%, 4%);
+  z-index: 7;
+  cursor: pointer;
+  -webkit-animation: topBottom 0.6s alternate infinite;
+          animation: topBottom 0.6s alternate infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.santapolis-main-wrapper__appearance {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 21%;
+  z-index: 3;
+  transform: translate(50%, -33%);
+}
+.santapolis-main-wrapper__appearance img {
+  -webkit-animation: updown 7.5s ease infinite;
+          animation: updown 7.5s ease infinite;
+}
+.santapolis-main-wrapper__logo-marvin {
+  position: absolute;
+  top: 50%;
+  width: 28.6%;
+  left: 50%;
+  transform: translate(-52%, -71%);
+}
+.santapolis-main-wrapper__logo-marvin img {
+  -webkit-animation: updown 7.2s ease infinite;
+          animation: updown 7.2s ease infinite;
+}
+.santapolis-main-wrapper__offer-link {
+  position: absolute;
+  top: 4%;
+  width: 71%;
+  height: 39%;
+  right: 14%;
+  cursor: pointer;
+}
+.santapolis-main-wrapper__arrow-minutes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  transform: translate(-101%, -55.3%);
+  z-index: 2;
+}
+.santapolis-main-wrapper__arrow-minutes img {
+  transform-origin: right bottom;
+}
+.santapolis-main-wrapper__santa {
+  position: absolute;
+  top: 76%;
+  left: 63%;
+  width: 25%;
+  transform: translate(100%, 86%);
+  z-index: 4;
+}
+.santapolis-main-wrapper__arrow-hours {
+  position: absolute;
+  height: auto;
+  top: 50%;
+  width: 29.1%;
+  left: 50%;
+  transform: translate(-4%, -38%);
+}
+.santapolis-main-wrapper__arrow-hours img {
+  transform-origin: left bottom;
+}
+.santapolis-main-wrapper__arrow-logo-santa {
+  position: absolute;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+}
+.santapolis-main-wrapper__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.santapolis-popup {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%) scale(0.9);
+  width: 485px;
+  max-width: 95%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.77);
+  padding: 30px 25px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgb(0, 0, 0), -23px 0 20px -23px rgba(0, 0, 0, 0.8), 23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  transition: all 0.18s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+.santapolis-popup.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.santapolis-popup__title {
+  text-align: center;
+}
+.santapolis-popup__title h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 6%;
+  color: #f50505;
+  font-size: 24px;
+}
+
+.santapolis-popup__content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.santapolis-popup__content li {
+  margin-bottom: 20px;
+}
+.santapolis-popup__content li:last-child {
+  margin-bottom: 0;
+}
+.santapolis-popup__content strong {
+  font-weight: 600;
+}
+
+.santapolis-close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 30px;
+  color: #000;
+  cursor: pointer;
+}
+.santapolis-close:hover {
+  color: #353535;
+}
+
+.santapolis-popup__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.768627451);
+  z-index: 10;
+}
+.santapolis-popup__backdrop.hidden {
+  display: none;
+}
+
+@-webkit-keyframes santaSpin {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(15deg);
+  }
+}
+
+@keyframes santaSpin {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(15deg);
+  }
+}
+@-webkit-keyframes topBottom {
+  0% {
+    top: 42%;
+  }
+  100% {
+    top: 43%;
+  }
+}
+@keyframes topBottom {
+  0% {
+    top: 42%;
+  }
+  100% {
+    top: 43%;
+  }
+}
+@-webkit-keyframes updown {
+  0%, 50%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(5px);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  30% {
+    transform: translateY(20px);
+  }
+  35% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes updown {
+  0%, 50%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(5px);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  30% {
+    transform: translateY(20px);
+  }
+  35% {
+    transform: translateY(-5px);
+  }
+}
+.pp {
+  display: none;
+}
+
+@media only screen and (max-width: 1460px) {
+  .santapolis-main-wrapper__offer-arrow-right {
+    width: 1%;
+  }
+  .santapolis-main-wrapper__offer-arrow-left {
+    width: 1.3%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .animated {
+    /*CSS transitions*/
+    transition-property: none !important;
+    /*CSS transforms*/
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important;
+  }
+}/*# sourceMappingURL=main.css.map */
